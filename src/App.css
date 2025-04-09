@@ -1,0 +1,28 @@
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.animatedNav {
+  position: sticky;
+  top: 0;
+  animation: slide-down 0.7s;
+  width: 100%;
+  z-index: 999;
+  border-bottom: solid #e1e1e1 1px;
+  /* background: #fff; */
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
